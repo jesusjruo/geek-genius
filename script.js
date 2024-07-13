@@ -88,7 +88,6 @@ const renderStocks = () => {
         heart.src = './assets/heart.png';
         heart.width = 100;
         heart.height = 100;
-        console.log(heart);
         stocksContainer.appendChild(heart);
     }
 }
@@ -106,7 +105,6 @@ const selectAnswer = (answer) => {
         answersArray.forEach(button => {
             button.disabled = true;
             if (button.textContent === answer.text) {
-                console.log("aaaaaaaa");
                 if(answer.correct) {
                     button.style.backgroundColor = 'green';
                 } else {
@@ -134,7 +132,6 @@ const startTimer = () => {
 };
 
 const handleNextQuestion = () => {
-    console.log(stocks);
     currentQuestionIndex++;
     if (currentQuestionIndex < filteredQuestions.length) {
         if(stocks > 0) {
