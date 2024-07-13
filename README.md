@@ -5,3 +5,4 @@
 - 1. Add a red background when choosing a wrong answer.
   2. Add a counter for the remaining categories after completing a level.
   3. Add a different and more epic background music when completing the game.
+  4. Add responsiveness to the game to be played on any device.
