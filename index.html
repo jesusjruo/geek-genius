@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="questions.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="title-container">
+            <h1 class="title">Geek Genius <br> <p class="name-title"> By Jesus Urdaneta </p></h1>
+            <p>Welcome to GEEK GENIUS, where your knowledge is put to the ultimate test!
+                The game is simple: choose a category, and questions will pop up. Answer correctly to move to the next level; 
+                make a mistake, and you'll lose a heart <span>(keep in mind you only have 2 of those).</span>
+                Do you think you can beat the challenge and prove your worth? 
+                Dive into the matrix and let's find out!</p>
+            <button id="start-button">Start Game</button>
+        </div>
+        <div id="category-container">
+            <h1 class="title category-title">Select a category</h1>
+            <button class="category-button" data-category="history">History</button>
+            <button class="category-button" data-category="science">Science</button>
+            <button class="category-button" data-category="geography">Geography</button>
+            <button class="category-button" data-category="sports">Sports</button>
+            <button class="category-button" data-category="movies">Movies</button>
+            <button class="category-button" data-category="videogames">Videogames</button>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="timer"><span id="time">15</span></div>
+            <div id="answer-buttons" class="btn-container"></div>
+            <button id="next-button" class="hide">Next</button>
+            <div id="stocks-container" class="">
+            </div>
+        </div>
+        <div id="lost-container" class="hide">
+            <h1 class="title">YOU LOST</h1>
+            <p>Better luck next time noob...</p>
+            <button id="retry-button">Try again</button>
+        </div>
+        <div id="won-container" class="hide">
+            <h1 class="title">CONGRATULATIONS!</h1>
+            <p>You defeated the matrix on this category, but don't get too excited to still have N more to go.</p>
+            <p>Good luck!</p>
+            <button id="back-button">Go back to categories</button>
+        </div>
+        <div id="game-completed" class="hide">
+            <h1 class="title">YOU HAVE CONQUERED THE MATRIX!!</h1>
+            <p>You defeated the matrix on all categories and proofed yourself worth it of becoming the new LORD OF THE MATRIX.</p>
+            <p>Thanks for playing!</p>
+            <button id="start-over-button">Go to main page</button>
+        </div>
+        <audio id="background-music" loop>
+            <source src="assets/retro-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
